@@ -137,7 +137,7 @@ LOCAL_CFLAGS += -DFUNC_DEBUG
 #LOCAL_CFLAGS += -DDEBUG
 LOCAL_CFLAGS += -DVK_USE_PLATFORM_ANDROID_KHR
 
-LOCAL_LDLIBS := -ldl -llog -lm -landroid -lEGL -lGLES3
+LOCAL_LDLIBS := -ldl -llog -lm -landroid -lEGL -lGLESv3
 #building as a shared lib
 
 LOCAL_STATIC_LIBRARIES := OSDependent
