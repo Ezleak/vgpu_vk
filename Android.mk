@@ -39,7 +39,7 @@ LOCAL_SRC_FILES:= \
     src/EGL/source/rendering_api/rendering_api.cpp \
     src/EGL/source/utils/eglLogger.cpp
 
-LOCAL_LDLIBS := -ldl -llog
+LOCAL_LDLIBS := -ldl -llog -lEGL -landroid
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -137,7 +137,7 @@ LOCAL_CFLAGS += -DFUNC_DEBUG
 #LOCAL_CFLAGS += -DDEBUG
 LOCAL_CFLAGS += -DVK_USE_PLATFORM_ANDROID_KHR
 
-LOCAL_LDLIBS := -ldl -llog -lm
+LOCAL_LDLIBS := -ldl -llog -lm -landroid -lEGL -lGLES3
 #building as a shared lib
 
 LOCAL_STATIC_LIBRARIES := OSDependent
